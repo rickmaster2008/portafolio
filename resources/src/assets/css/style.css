@@ -1,0 +1,63 @@
+* {
+  font-family: 'Spartan';
+}
+
+.scrollDownIn {
+  animation: scrollDownIn 0.7s;
+}
+
+.scrollDownOut {
+  animation: scrollDownOut 0.7s;
+}
+
+.scrollUpIn {
+  animation: scrollUpIn 0.7s;
+}
+
+.scrollUpOut {
+  animation: scrollUpOut 0.7s;
+}
+
+@keyframes scrollDownIn {
+  from {
+    transform: scale(0);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes scrollDownOut {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(100);
+    opacity: 0;
+  }
+}
+
+@keyframes scrollUpIn {
+  from {
+    transform: scale(100);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes scrollUpOut {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(0);
+    opacity: 0;
+  }
+}

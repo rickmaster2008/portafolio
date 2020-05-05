@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://kit.fontawesome.com/635c9bfd63.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Sacramento|Spartan&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="container">
+      <section id="background"></section>
+      <section id="home" data-view="home" class="view">
+        <img class="perfil" src="img/freelancer_pic.jpg" alt="" />
+        <h1>
+          Soy Ricardo.
+        </h1>
+        <p>Desarrollador Fullstack.</p>
+      </section>
+      <section id="acerca" data-view="acerca" class="view">
+        <img class="perfil" src="img/freelancer_pic.jpg" alt="" />
+        <h1 class="text-3xl my-4">
+          Hola.
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut repellat
+          perferendis eligendi consectetur dolore ullam, mollitia eaque ab!
+          Blanditiis, autem?
+        </p>
+        <div id="languages-container">
+          <div class="language-wrapper">
+            <img
+              class="language"
+              src="img/languages/python.svg"
+              alt="python-image"
+            />
+            <ul class="tool-list" id="python">
+              <li><img src="img/tools/django.svg" alt="" class="tool" /></li>
+            </ul>
+          </div>
+          <div class="language-wrapper">
+            <img
+              class="language"
+              src="img/languages/javascript.svg"
+              alt="javascript-image"
+            />
+            <ul class="tool-list">
+              <li><img src="img/tools/express.svg" alt="" class="tool" /></li>
+              <li><img src="img/tools/vue.svg" alt="" class="tool" /></li>
+              <li><img src="img/tools/react.svg" alt="" class="tool" /></li>
+              <li><img src="img/tools/webpack.svg" alt="" class="tool" /></li>
+              <li><img src="img/tools/typescript.svg" alt="" class="tool" /></li>
+            </ul>
+          </div>
+          <div class="language-wrapper">
+            <img
+              class="language"
+              src="img/languages/golang.svg"
+              alt="golang-image"
+            />
+          </div>
+          <div class="language-wrapper">
+            <img class="language" src="img/languages/php.svg" alt="php-image" />
+            <ul class="tool-list">
+              <li><img src="img/tools/laravel.svg" alt="" class="tool" /></li>
+              <li><img src="img/tools/wordpress.svg" alt="" class="tool" /></li>
+            </ul>
+          </div>
+          <div class="language-wrapper">
+            <img
+              class="language"
+              src="img/languages/docker.svg"
+              alt="docker-image"
+            />
+          </div>
+        </div>
+      </section>
+      <section id="trabajos" data-view="trabajos" class="view">
+        <h1 class="text-5xl text-center py-20 text-white">Trabajos</h1>
+        <span id="arrow-left" class="arrow"><img src="img/icons/arrow-circle-left-solid.svg" alt=""></span>
+        <div id="galeria">
+          <div class="galeria-item"><img class="rounded-lg" src="img/portfolio/browser.svg" alt=""></div>
+          <div class="galeria-item"><img class="rounded-lg" src="img/portfolio/browser.svg" alt=""></div>
+          <div class="galeria-item"><img class="rounded-lg" src="img/portfolio/browser.svg" alt=""></div>
+          <div class="galeria-item"><img class="rounded-lg" src="img/portfolio/browser.svg" alt=""></div>
+          <div class="galeria-item"><img class="rounded-lg" src="img/portfolio/browser.svg" alt=""></div>
+          <div class="galeria-item"><img class="rounded-lg" src="img/portfolio/browser.svg" alt=""></div>
+          <div class="galeria-item"><img class="rounded-lg" src="img/portfolio/browser.svg" alt=""></div>
+          <div class="galeria-item"><img class="rounded-lg" src="img/portfolio/browser.svg" alt=""></div>
+        </div>
+        <span id="arrow-right" class="arrow"><img src="img/icons/arrow-circle-right-solid.svg" alt=""></span>
+      </section>
+    </div>
+    <ul id="menu">
+      <li>
+        <a class="menu-item-link" data-section="#home" data-order="0" href="#home"
+          >Inicio</a
+        >
+      </li>
+      <li>
+        <a class="menu-item-link" data-section="#acerca" data-order="1" href="#acerca"
+          >Acerca de mi</a
+        >
+      </li>
+      <li>
+        <a
+          class="menu-item-link"
+          data-section="#trabajos"
+          data-order="2"
+          href="#trabajos"
+          >Trabajos</a
+        >
+      </li>
+      <li>
+        <a class="menu-item-link" data-section="#blog" data-order="3" href="#blog"
+          >Blog</a
+        >
+      </li>
+    </ul>
+    <i id="contact-icon" class="far fa-envelope fa-2x"></i>
+    <button id="menu-trigger">
+      MENU
+    </button>
+    <script src="main.js"></script>
+  </body>
+</html>
